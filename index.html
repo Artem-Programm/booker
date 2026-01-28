@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booker</title>
     <link href="style.css" rel="stylesheet">
+    <title>Booker</title>
 </head>
-<body>
+<header class="header">
     <nav>
         <div class="logo">
-            <h1>BOOKER</h1>
+            <h1>Booker</h1>
         </div>
-        <div class="navbar">
+        <div class="nav">
             <ul>
                 <li>
-                    <p>ГЛАВНАЯ</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <p>МОИ ЗАКАЗЫ</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <p>БИБЛИОТЕКА</p>
+                    <p>Главная</p>
                 </li>
             </ul>
         </div>
-        <div class="cart">
-            <h3>Корзина</h3>
+        <div class="user_box">
+            <p class="cart">Корзина</p>
+            <p>Мой профиль</p>
         </div>
     </nav>
+</header>
+<aside class="cart_block">
+    <p>Корзина</p>
+    <hr>
+    <input type="submit" value="Купить">
+</aside>
+<body>
+    <main>
+        <section class="main_block">
+            <div class="info">
+                <h1>Откройте мир книг с Booker</h1>
+                <p>
+                    Покупайте книги, читайте онлайн в нашей удобной библиотеке.
+                </p>
+            </div>
+            <div class="search_block">
+                <input id="search" class="search" type="text" name="search" placeholder="Найти книгу или автора...">
+                <input id="find" class="search_request" type="submit" name="search_request" value="Поиск">
+            </div>
+        </section>
+        <section class="popular_book">
+            <h1>Популярные книги</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2 id="name">Война и Мир</h2>
+                    <p id="author">Лев Толстой</p>
+                    <img id="img" src="warandsafe.jpg">
+                    <input type="submit" value="700 руб" id="buy">
+                </div>
+                <div class="card">
+                    <h2 id="name">Преступление и наказание</h2>
+                    <p id="author">Федор Достаевский</p>
+                    <img id="img" src="prestiplenie.jpeg">
+                    <input type="submit" value="900 руб" id="buy">
+                </div>               
+            </div>
+        </section>
+    </main>
+
+
+
 </body>
+<script src="scripts.js"></script>
 </html>
